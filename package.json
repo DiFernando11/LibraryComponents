@@ -1,0 +1,40 @@
+{
+  "name": "desygn",
+  "private": false,
+  "version": "0.0.3",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "preact": "^10.19.3",
+    "react": "^18.2.0",
+    "vite-plugin-dts": "^3.7.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.7.0",
+    "@types/node": "^20.11.6",
+    "@types/react": "^18.2.48",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}
